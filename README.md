@@ -1,7 +1,7 @@
-SpreeRtl
+Spree_rtl
 ========
-
-Introduction goes here.
+###This is a work in progress. Please do not use!
+This is a Spree extension to provide Right to left layout for rtl languages such as Arabic, Persian, Urdu, and others.
 
 Installation
 ------------
@@ -36,4 +36,4 @@ Simply add this require statement to your spec_helper:
 require 'spree_rtl/factories'
 ```
 
-Copyright (c) 2014 [name of extension creator], released under the New BSD License
+Copyright (c) 2014 Aman Alshurafa, released under the New BSD License
