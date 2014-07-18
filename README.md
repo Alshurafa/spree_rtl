@@ -19,6 +19,12 @@ bundle
 bundle exec rails g spree_rtl:install
 ```
 
+How to use
+----------
+add the folowing to every locale you want to be directed left to right:
+Assuming locale is Arabic, open the /config/locales/ar.yml or created if it does not exist and add ```dir: "rtl"```
+Please note that if you just created an empty file, you need to add ```ar:``` at the very top of the file.
+
 Testing
 -------
 
@@ -35,5 +41,13 @@ Simply add this require statement to your spec_helper:
 ```ruby
 require 'spree_rtl/factories'
 ```
+
+### Checklist (more will be added to it)
+- [x] Change layout from ltr to rtl depeding on language
+- [x] Give the user the ablity to enable and disable changing layout direction
+- [ ] Apply layout changes to admin panel.
+- [ ] Default dir to "ltr" when not being defined in locale.
+- [ ] move the homepage link at the top to the right.
+- [ ] Reorder the checkout stages bar at the top of /checkout.
 
 Copyright (c) 2014 Aman Alshurafa, released under the New BSD License
